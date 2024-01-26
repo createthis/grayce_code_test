@@ -3,7 +3,9 @@ As a software engineer in 2024, I can't believe I'm literally pair programming w
 but here we are. I feel like this may become the new normal for green field projects.
 
 If you expected me to do this test without AI assistance... ok, I get it, but I'm trying to keep
-my skill set relevant here and this is new to me, so I thought I'd try it.
+my skill set relevant here and this is new to me, so I thought I'd try it. In some ways, this 
+might be more telling than code written directly by me, because you can see in the transcripts
+how I interact with GPT, which is probably similar to how I would interact with another human.
 
 This test was implemented using ChatGPT 4 and the "Professional Coder" GPT to save time.
 
@@ -21,7 +23,7 @@ Instead, apparently we can link to them.
    and keep GPT honest. Here's my second attempt: https://chat.openai.com/share/3826cdf3-1fe5-4578-95d9-7f55d2cbcdf7
 
 # Dependencies
-I used node v16.14.0 and npm 8.3.1, if it matters. Usually it shouldn't, but sometimes it does.
+I used node `v16.14.0` and npm `8.3.1`, if it matters. Usually it shouldn't, but sometimes it does.
 
 # Getting Started
 1. ```bash
@@ -65,3 +67,4 @@ I used node v16.14.0 and npm 8.3.1, if it matters. Usually it shouldn't, but som
 
    Reading through the code and understanding what it is doing... this looks pretty sane to me. It may not be perfect,
    but it's pretty good for quick and dirty.
+1. The output json is available at `output/matches.json`.
