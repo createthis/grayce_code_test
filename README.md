@@ -7,7 +7,7 @@ The initial prompt is recorded in PROMPT.md, but ChatGPT doesn't get it right on
    npm install
    ```
 1. ```bash
-   node src/index.js
+   rm -f database.db && node src/index.js
    ```
 1. To inspect the database via the CLI tool:
    ```bash
