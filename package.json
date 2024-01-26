@@ -1,0 +1,15 @@
+
+{
+  "name": "care-matching-system",
+  "version": "1.0.0",
+  "description": "A system to match members with care partners based on specific criteria.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "author": "",
+  "license": "ISC"
+}
