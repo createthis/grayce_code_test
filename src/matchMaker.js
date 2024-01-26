@@ -1,5 +1,3 @@
-import { open } from 'sqlite';
-
 async function matchMembersWithCarePartners(db) {
     // Retrieve Members and Care Partners from the database
     const members = await db.all('SELECT * FROM members');
