@@ -1,3 +1,5 @@
+import { open } from 'sqlite';
+
 async function matchMembersWithCarePartners(db) {
     // Retrieve Members and Care Partners from the database
     const members = await db.all('SELECT * FROM members');
@@ -21,6 +23,12 @@ async function matchMembersWithCarePartners(db) {
             suitablePartner.current_active_cases++; // Update the active case count
         }
     });
+
+    // Update the database with the new active case counts
+    for (const partner of carePartners) {
+        await db.run('UPDATE care_partners SET current_active_cases = ? WHERE id = ?',
+                     [partner.current_active_cases, partner.id]);
+    }
 
     return matches;
 }

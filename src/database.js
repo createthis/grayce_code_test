@@ -1,4 +1,5 @@
 import sqlite3 from 'sqlite3';
+import { open } from 'sqlite';
 import fs from 'fs/promises';
 
 // Function to read JSON file
@@ -14,7 +15,10 @@ async function readJsonFile(filePath) {
 
 // Initialize the database and load data
 async function initializeDatabase() {
-    const db = new sqlite3.Database('./database.db');
+    const db = await open({
+        filename: './database.db',
+        driver: sqlite3.Database
+    });
 
     await db.exec(`
         CREATE TABLE IF NOT EXISTS members (

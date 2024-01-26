@@ -6,6 +6,7 @@
   "type": "module",
   "dependencies": {
     "lodash": "^4.17.21",
+    "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   },
   "scripts": {

@@ -1,6 +1,7 @@
 import { initializeDatabase } from './database.js';
 import { matchMembersWithCarePartners } from './matchMaker.js';
 import fs from 'fs/promises';
+import { open } from 'sqlite';
 import sqlite3 from 'sqlite3';
 
 async function main() {
@@ -9,7 +10,10 @@ async function main() {
         await initializeDatabase();
 
         // Open the database
-        const db = new sqlite3.Database('./database.db');
+        const db = await open({
+            filename: './database.db',
+            driver: sqlite3.Database
+        });
 
         // Perform the matching
         const matches = await matchMembersWithCarePartners(db);

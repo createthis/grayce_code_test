@@ -5,3 +5,6 @@
 # node
 node_modules
 database.db
+
+# app
+output
