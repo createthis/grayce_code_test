@@ -22,6 +22,13 @@ You should write code that:
 - Forms a match for each member based on the above criteria
 - Writes a new JSON file with an entry for each member in the format: `{ member_id: "XXX", care_partner_id: "YYY" }` (see sample_output.json)
 
-Write the solution in Node.js.
+Additional coding criteria:
+- Write the solution in Node.js.
+- Include a package.json for any dependencies
+- Use ES14 language features where appropriate.
+- Use import (instead of require) and async/await.
+- Load the json data into an sqlite database.
+- Any record keeping or counter changes should be persisted as updates in the sqlite database so that I can inspect the data easily.
+- Do not assume json property names. Make sure they match the data.
 
 Ask questions if anything is unclear.

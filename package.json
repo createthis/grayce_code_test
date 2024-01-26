@@ -1,15 +1,24 @@
-
 {
-  "name": "care-matching-system",
+  "name": "grayce_code_test",
   "version": "1.0.0",
-  "description": "A system to match members with care partners based on specific criteria.",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "sqlite3": "^5.1.7"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/createthis/grayce_code_test.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/createthis/grayce_code_test/issues"
+  },
+  "homepage": "https://github.com/createthis/grayce_code_test#readme"
 }
