@@ -20,6 +20,9 @@ Instead, apparently we can link to them.
 1. After that first attempt, I realized I wanted an sqlite database so that I could query the data
    and keep GPT honest. Here's my second attempt: https://chat.openai.com/share/3826cdf3-1fe5-4578-95d9-7f55d2cbcdf7
 
+# Dependencies
+I used node v16.14.0 and npm 8.3.1, if it matters. Usually it shouldn't, but sometimes it does.
+
 # Getting Started
 1. ```bash
    npm install
